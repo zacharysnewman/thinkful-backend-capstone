@@ -13,7 +13,7 @@ exports.up = function (knex) {
     table.string("title");
     table.integer("runtime_in_minutes");
     table.string("rating", ["G", "PG", "PG-13", "R", "NC-17", "NR"]);
-    table.string("description");
+    table.text("description");
     table.string("image_url");
     table.timestamps(true, true);
   });
